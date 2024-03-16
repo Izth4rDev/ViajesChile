@@ -1,11 +1,15 @@
+:root{
+    --color-fondo:#30CAF0;
+}
 .montserrat-regular{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-
 .text-montserrat{
     font-family: "Montserrat";
 }
-
+.bg-fondo{
+    background-color: var(--color-fondo);
+}
