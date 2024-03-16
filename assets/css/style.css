@@ -14,3 +14,6 @@
 .bg-fondo{
     background-color: var(--color-fondo);
 }
+.h2{
+    text-align: center;
+}
