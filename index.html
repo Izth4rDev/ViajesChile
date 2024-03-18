@@ -13,28 +13,29 @@
 <body>    
     <header>
         <!-- navbar -->
+        <span id="inicio"></span>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top montserrat-regular">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/viajes.svg" alt="" style="width:30px;"/>
-                    Viajes Chile
+                    <span>Viajes Chile</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end;">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes somos</a>
+                            <a class="nav-link" href="#informacion">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Destacados</a>
+                            <a class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -67,13 +68,14 @@
     </section>
     <!-- información -->
     <main class="bg-black">
-        <section class="container d-none d-md-block">
+        <section class="container d-none d-md-block" id="informacion">
             <div class="row">
                 <div class="col-12 mb-5">
                     <h2 class="text-white mt-5 text-center">¿Quiénes somos?</h2>
                 </div>
                 <div class="col-4">
-                    <h4 class="bg-info text-center"><i class="fa-solid fa-plane text-white fa-x2"></i></h4>
+                    <h4 class="bg-info text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Descubre nuestros programas de viajes">
+                    <i class="fa-solid fa-plane text-white fa-x2"></i></h4>
                     <p class="text-white montserrat-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
@@ -84,10 +86,10 @@
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <h4 class="bg-info text-center"><i class="fa-solid fa-mountain text-white fa-x2"></i></h4>
+                        <h4 class="bg-info text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Descubre nuestros programas de excursión"><i class="fa-solid fa-mountain text-white fa-x2"></i></h4>
                 </div>
                 <div class="col-4">
-                    <h4 class="bg-info text-center"><i class="fa-solid fa-route text-white fa-x2"></i></i></h4>
+                    <h4 class="bg-info text-center" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Descubre nuestras rutas de senderismo"><i class="fa-solid fa-route text-white fa-x2"></i></i></h4>
                     <p class="text-white montserrat-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
@@ -96,7 +98,7 @@
             </div>
         </section>
                 <!-- Seccion Destacados MF-->
-        <section class="bg-black text-light text-montserrat align-items-center py-4">
+        <section class="bg-black text-light text-montserrat align-items-center py-4" id="destacados">
             <h2 class="text-center">DESTACADOS</h2>
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
@@ -136,7 +138,7 @@
             </div>           
         </section>
         <!--Seccion contactos-->
-        <section class="bg-black text-light text-montserrat py-4">
+        <section class="bg-black text-light text-montserrat py-4" id="contacto">
             <h2 class="text-center">CONTACTO</h2>
             <div class="container">
                 <div class="row justify-content-center">
@@ -186,7 +188,8 @@
         </section>
     </footer>
     <script src="https://kit.fontawesome.com/9d55460b02.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
