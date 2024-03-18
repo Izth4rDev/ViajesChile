@@ -1,6 +1,9 @@
 :root{
     --color-fondo:#30CAF0;
 }
+*{
+    scroll-behavior: smooth;
+}
 .montserrat-regular{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
