@@ -21,5 +21,8 @@
     align-items: center;
 }
 .card-img-top {
-    height: 191px;
+    height: 191px; 
+}
+.col{
+    padding: 10px;
 }
