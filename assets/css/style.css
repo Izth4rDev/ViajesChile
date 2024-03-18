@@ -13,13 +13,12 @@
 .bg-fondo{
     background-color: var(--color-fondo);
 }
-<<<<<<< HEAD
-.container-fluid{
+/*.container-fluid{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-}
+}*/
 .card-img-top {
     height: 191px; 
 }
@@ -28,6 +27,4 @@
     
 }
 
-=======
->>>>>>> main
 
